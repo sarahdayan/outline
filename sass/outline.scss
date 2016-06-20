@@ -1,0 +1,43 @@
+/*!
+ * Outline | A simple and lightweight CSS responsive boilerplate (1.0.0)
+ * (c) 2016 Sarah Dayan
+ * http://www.getoutline.com
+ */
+
+@import '_variables';
+@import '_mixins';
+
+.container {
+	max-width: #{$grid-width}px;
+	margin: 0 auto;
+	padding-left: #{$gutter}px;
+	padding-right: #{$gutter}px;
+	@include clearfix();
+}
+
+.container-full {
+	width: 100%;
+	@include clearfix();
+}
+
+.row {
+	margin-left: -#{$gutter}px;
+	margin-right: -#{$gutter}px;
+	@include clearfix();
+}
+
+.col {
+	margin-left: #{$gutter}px;
+	margin-right: #{$gutter}px;
+	box-sizing: border-box;
+	float: left;
+	@include clearfix();
+}
+
+@for $i from 1 through $columns {
+	.#{$col-class}-#{$i} {
+		width: calc((100% / (#{$columns} / #{$i})) - (#{$gutter}px * 2));
+	}
+}
+
+@import '_media-queries';

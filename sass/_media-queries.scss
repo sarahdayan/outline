@@ -1,0 +1,27 @@
+@media (max-width: #{$grid-width}px) {
+	@if ($grid-width > $l) {
+		.container {
+			max-width: #{$l}px;
+		}
+	}
+}
+
+@media (max-width: #{$l}px) {
+	.container {
+		max-width: #{$m}px;
+	}
+}
+
+@media (max-width: #{$m}px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: #{$s}px) {
+	@for $i from 1 through $columns {
+		.#{$col-class}-#{$i} {
+			width: calc(100% - (#{$gutter}px * 2));
+		}
+	}
+}
