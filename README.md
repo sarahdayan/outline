@@ -19,13 +19,14 @@ You can also go full-width by using a `container-full` instead of a `container`.
 
 You can use Outline right out of the box, or you can tune it a little before you go. It comes with source Sass files, expanded and minified CSS.
 
-<pre><div class="container">
-    <div class="row">
-        <div class="col col-12">
-            <!-- This is where it all starts -->
-        </div>
-    </div>
-</div></pre>
+<pre>
+&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class="row"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col col-12"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- This is where it all starts --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&lt;/div&gt;</pre>
 
 ### Lighter than air
 
@@ -41,23 +42,24 @@ Outline is a transparent foundation, not an everything but the kitchen sink tool
 
 You can nest columns within columns as deep as you want. Don't forget to wrap each new line in a `row` and it'll just work.
 
-<pre><div class="container">
-    <div class="row">
-        <div class="col col-4">
-            <div class="row">
-                <div class="col col-6">
-                    <!-- I'm a .col-6 nested within a .col-4 -->
-                </div>
-                <div class="col col-6">
-                    <!-- Me too -->
-                </div>
-            </div>
-        </div>
-        <div class="col col-8">
-            <!-- I'm a regular .col-8 -->
-        </div>
-    </div>
-</div></pre>
+<pre>
+&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class="row"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col col-4"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="row"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col col-6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- I'm a .col-6 nested within a .col-4 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col col-6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- Me too --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col col-8"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- I'm a regular .col-8 --&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&lt;/div&gt;</pre>
 
 ### Cross-browser. Cross-platform. Mobile friendly.
 
