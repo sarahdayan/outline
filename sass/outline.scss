@@ -1,6 +1,6 @@
 /*!
- * Outline | A simple and lightweight CSS responsive boilerplate (1.0.0)
- * (c) 2016 Sarah Dayan
+ * Outline | A simple and lightweight CSS responsive boilerplate (1.2.0)
+ * (c) 2017 Sarah Dayan
  * http://www.getoutline.com
  */
 
@@ -17,6 +17,7 @@
 
 .container-full {
 	width: 100%;
+	overflow: hidden;
 	@include clearfix();
 }
 
@@ -37,6 +38,11 @@
 @for $i from 1 through $columns {
 	.#{$col-class}-#{$i} {
 		width: calc((100% / (#{$columns} / #{$i})) - (#{$gutter}px * 2));
+	}
+	@media (min-width: #{$s + 1}px) {
+		.#{$col-class}-offset-#{$i} {
+			margin-left: calc((100% / (#{$columns} / #{$i})) + #{$gutter}px);
+		}
 	}
 }
 
