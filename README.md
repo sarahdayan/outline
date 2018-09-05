@@ -7,8 +7,6 @@ Outline is exactly what it says: a simple grid-based boilerplate, and that's it.
 
 No additional modules. No preset styles. Just the stuff you asked for.
 
-Please visit: [http://www.getoutline.com](http://getoutline.com/)
-
 ### The Grid
 
 Outline works out of the box with a 12 columns fluid grid that extends up to 1140px wide. Columns are wrapped in `row`s, themselves wrapped in `container`s.
